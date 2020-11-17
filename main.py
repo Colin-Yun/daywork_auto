@@ -322,15 +322,16 @@ def gt_daily_work_doc():
 * @Function Name : main
 ************************************************'''
 def main():
-    #_id = 'bchyun'
+    _id = 'bchyun'
     #_id = 'hcg609'
-    _id = 'jooho7'
+    #_id = 'jooho7'
+    #_id = 'boram0527'
     _pw, work_repts = gt_daily_work_doc()
 
-    #try :
-    acc_web(_id, _pw, work_repts)
-    #except:
-        #print("Processing error be occured")
+    try :
+        acc_web(_id, _pw, work_repts)
+    except:
+        print("Processing error be occured")
 
     return
 
